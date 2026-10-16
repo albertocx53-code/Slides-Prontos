@@ -1,0 +1,275 @@
+// 2ª série EM — aulas 176 a 188
+window.AULAS = window.AULAS || {};
+
+AULAS[176] = { ill:'pena', slides:[
+  {type:'capa', title:'Romantismo: a poesia', sub:'Nacionalismo, ultrarromantismo e condoreirismo'},
+  {type:'objetivos', items:['Situar o Romantismo no contexto do século XIX','Reconhecer as três gerações românticas','Analisar características de cada geração','Ler poemas de Gonçalves Dias, Álvares de Azevedo e Castro Alves']},
+  {type:'pergunta', q:'O que você entende por "romântico"? É só falar de amor?', hint:'O Romantismo foi muito além do amor.', ill:'balao'},
+  {type:'conceito', title:'Contexto', text:'O **Romantismo** surge no Brasil após a **Independência (1822)**, num esforço de construir uma **identidade nacional**. Valoriza a **subjetividade**, a **emoção**, a **natureza** e a **liberdade**.', box:'Marco: "Suspiros Poéticos e Saudades", de Gonçalves de Magalhães (1836).', ill:'pena'},
+  {type:'exemplos', title:'As três gerações', cards:[['1ª: nacionalista/indianista','Natureza e indígena como símbolos nacionais (Gonçalves Dias)'],['2ª: ultrarromântica','Pessimismo, morte, amor idealizado (Álvares de Azevedo)'],['3ª: condoreira','Poesia social, abolicionista (Castro Alves)']]},
+  {type:'texto', title:'Leitura: Castro Alves', text:'"Senhor Deus dos desgraçados!\nDizei-me vós, Senhor Deus!\nSe é loucura... se é verdade\nTanto horror perante os céus?!"', source:'Castro Alves, "O Navio Negreiro", 1869 (domínio público)', side:{h:'Analise', items:['A quem o eu lírico se dirige?','Que horror é denunciado?','Que recursos dão força ao trecho?']}},
+  {type:'comparacao', title:'Ultrarromantismo x condoreirismo', left:{h:'2ª geração', items:['Eu lírico voltado para si','Tédio, morte, melancolia','"Mal do século"']}, right:{h:'3ª geração', items:['Voltado para a sociedade','Liberdade e abolição','Linguagem grandiosa']}},
+  {type:'passos', title:'Lendo poemas românticos', steps:[['Eu lírico','Quem fala e como se sente?'],['Tema','Pátria, amor, morte, liberdade'],['Geração','Que traços aparecem?'],['Contexto','Brasil pós-Independência']]},
+  {type:'mapa', title:'Mapa mental', center:'POESIA ROMÂNTICA', nodes:[['Subjetividade','Emoção'],['1ª geração','Nacionalismo'],['2ª geração','Mal do século'],['3ª geração','Poesia social'],['Gonçalves Dias','Canção do Exílio'],['Castro Alves','Poeta dos Escravos']]},
+  {type:'atividade', title:'Atividade 1: classifique a geração', instr:'A que geração o trecho se relaciona?', items:[{q:'Poema exalta guerreiros indígenas e a mata brasileira.', r:'1ª geração (indianista)'},{q:'Poema fala do desejo de morrer jovem e do tédio da vida.', r:'2ª geração (ultrarromântica)'},{q:'Poema denuncia a escravidão e clama por liberdade.', r:'3ª geração (condoreira)'}]},
+  {type:'desafio', title:'Desafio: sarau romântico', text:'Em grupos, cada um lê e analisa um poema de uma geração.', items:['Escolham um poema de domínio público','Identifiquem a geração','Expliquem um recurso expressivo','Leiam com entonação adequada'], ill:'microfone'},
+  {type:'quiz', q:'O Romantismo brasileiro buscou construir...', opts:['uma identidade nacional','uma estética científica','a arte pela arte','a negação da emoção'], c:0, why:'Contexto pós-Independência.'},
+  {type:'quiz', q:'O "mal do século" caracteriza a...', opts:['2ª geração','1ª geração','3ª geração','poesia árcade'], c:0, why:'Pessimismo e melancolia.'},
+  {type:'quiz', q:'Castro Alves é conhecido como...', opts:['Poeta dos Escravos','Boca do Inferno','Bruxo do Cosme Velho','Poeta da Pátria Indígena'], c:0, why:'Por sua poesia abolicionista.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Romantismo valoriza emoção e subjetividade.','1ª geração: nacionalismo e indianismo.','2ª geração: ultrarromantismo.','3ª geração: poesia social e abolicionista.']},
+  {type:'auto', items:['Situo o Romantismo.','Diferencio as três gerações.','Analiso poemas românticos.','Relaciono com o contexto histórico.']},
+  {type:'encerramento', casa:'Leia o poema completo "O Navio Negreiro" e anote 3 imagens fortes.'}
+]};
+
+AULAS[177] = { ill:'livro', slides:[
+  {type:'capa', title:'Romantismo: a prosa', sub:'O romance e a construção do Brasil'},
+  {type:'objetivos', items:['Reconhecer os tipos de romance romântico','Analisar o indianismo e o regionalismo','Identificar a idealização de personagens','Ler trechos de José de Alencar']},
+  {type:'pergunta', q:'Novelas de TV têm mocinhos, vilões e finais felizes. De onde vem essa fórmula?', hint:'Pense nos folhetins do século XIX.', ill:'balao'},
+  {type:'conceito', title:'O romance romântico', text:'No século XIX, o **romance** se populariza no Brasil, publicado em **folhetins** nos jornais. Os autores retratam o país em **romances indianistas, urbanos, regionalistas e históricos**, com personagens **idealizados**.', box:'José de Alencar quis "mapear" o Brasil em sua obra.', ill:'livro'},
+  {type:'exemplos', title:'Tipos de romance', cards:[['Indianista','"Iracema", "O Guarani" (Alencar)'],['Urbano','"Senhora", "Lucíola" (Alencar); "A Moreninha" (Macedo)'],['Regionalista','"O Sertanejo" (Alencar); "Inocência" (Taunay)'],['Histórico','"As Minas de Prata" (Alencar)']]},
+  {type:'texto', title:'Leitura: Iracema', text:'"Iracema, a virgem dos lábios de mel, que tinha os cabelos mais negros que a asa da graúna e mais longos que seu talhe de palmeira."', source:'José de Alencar, "Iracema", 1865 (domínio público)', side:{h:'Analise', items:['Que comparações descrevem Iracema?','Que elementos da natureza aparecem?','Como a personagem é idealizada?']}},
+  {type:'comparacao', title:'Idealização romântica', left:{h:'Heroína', items:['Bela, pura, virtuosa','Associada à natureza']}, right:{h:'Herói', items:['Corajoso, leal','No indianismo: indígena como herói nacional']}},
+  {type:'passos', title:'Analisando um romance romântico', steps:[['Tipo','Indianista, urbano...'],['Personagens','Idealizados?'],['Enredo','Amor e obstáculos'],['Projeto','Que Brasil se constrói?']]},
+  {type:'mapa', title:'Mapa mental', center:'PROSA ROMÂNTICA', nodes:[['Folhetim','Jornais'],['Indianista','Iracema'],['Urbano','Senhora'],['Regionalista','Inocência'],['Idealização','Personagens perfeitos'],['Alencar','Projeto nacional']]},
+  {type:'atividade', title:'Atividade 1: interpretação', instr:'Responda sobre o trecho de "Iracema".', items:[{q:'O que significa "lábios de mel"?', r:'Lábios doces, atraentes (metáfora)'},{q:'Que elemento da natureza compara o corpo de Iracema?', r:'A palmeira (talhe de palmeira)'},{q:'Por que a descrição é idealizada?', r:'Apresenta beleza perfeita, ligada à natureza brasileira'}]},
+  {type:'desafio', title:'Desafio: folhetim da turma', text:'Escrevam um capítulo de folhetim romântico ambientado na cidade atual.', items:['Herói e heroína idealizados','Um obstáculo ao amor','Final em suspense ("continua...")','Linguagem expressiva'], ill:'pena'},
+  {type:'quiz', q:'Os folhetins eram publicados em...', opts:['jornais, em capítulos','livros de luxo apenas','rádios','revistas científicas'], c:0, why:'Capítulos periódicos.'},
+  {type:'quiz', q:'"Iracema" é um romance...', opts:['indianista','urbano','regionalista','realista'], c:0, why:'Tem o indígena como figura central.'},
+  {type:'quiz', q:'Uma característica da prosa romântica é...', opts:['idealização dos personagens','análise psicológica fria','determinismo científico','linguagem telegráfica'], c:0, why:'Heróis e heroínas perfeitos.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Romance romântico circulou em folhetins.','Tipos: indianista, urbano, regionalista, histórico.','Personagens idealizados.','Alencar buscou retratar o Brasil.']},
+  {type:'auto', items:['Classifico romances românticos.','Analiso a idealização.','Leio trechos de Alencar.','Relaciono com o projeto nacional.']},
+  {type:'encerramento', casa:'Leia o primeiro capítulo de "Iracema" e anote três comparações com a natureza.'}
+]};
+
+AULAS[178] = { ill:'lupa', slides:[
+  {type:'capa', title:'Realismo e Naturalismo', sub:'A realidade sem idealização'},
+  {type:'objetivos', items:['Situar o Realismo e o Naturalismo no século XIX','Diferenciar as duas estéticas','Analisar a ironia e a análise psicológica em Machado de Assis','Reconhecer o determinismo naturalista']},
+  {type:'pergunta', q:'Personagens perfeitos, como os românticos, existem na vida real?', hint:'Pense em interesses, vaidades e contradições.', ill:'balao'},
+  {type:'conceito', title:'Contexto', text:'O **Realismo** (a partir de 1881 no Brasil) reage à idealização romântica, retratando a sociedade com **objetividade**, **crítica** e **análise psicológica**. O **Naturalismo** radicaliza, explicando o comportamento por **determinismo** (meio, raça, momento).', box:'Marcos de 1881: "Memórias Póstumas de Brás Cubas" (Machado) e "O Mulato" (Aluísio Azevedo).', ill:'lupa'},
+  {type:'comparacao', title:'Realismo x Naturalismo', left:{h:'Realismo', items:['Análise psicológica','Crítica à burguesia','Machado de Assis']}, right:{h:'Naturalismo', items:['Determinismo e ciência','Personagens animalizados','Aluísio Azevedo, "O Cortiço"']}},
+  {type:'texto', title:'Leitura: Machado de Assis', text:'"Ao verme que primeiro roeu as frias carnes do meu cadáver dedico como saudosa lembrança estas Memórias Póstumas."', source:'Machado de Assis, "Memórias Póstumas de Brás Cubas", 1881 (domínio público)', side:{h:'Analise', items:['Quem narra o livro?','Que efeito tem a dedicatória?','Onde está a ironia?']}},
+  {type:'exemplos', title:'Recursos machadianos', cards:[['Narrador defunto','Brás Cubas narra após a morte'],['Ironia','Crítica sutil à sociedade'],['Diálogo com o leitor','"Leitor, ..."'],['Ambiguidade','Capitu traiu ou não?']]},
+  {type:'passos', title:'Lendo o Realismo', steps:[['Narrador','Confiável?'],['Personagens','Interesses e contradições'],['Crítica','Que valores são expostos?'],['Recursos','Ironia, digressões']]},
+  {type:'mapa', title:'Mapa mental', center:'REALISMO E NATURALISMO', nodes:[['Objetividade','Contra a idealização'],['Psicologia','Machado'],['Ironia','Crítica social'],['Determinismo','Meio e herança'],['O Cortiço','Aluísio Azevedo'],['1881','Marco']]},
+  {type:'atividade', title:'Atividade 1: interpretação', instr:'Responda sobre a dedicatória.', items:[{q:'Por que a dedicatória é surpreendente?', r:'Porque é dedicada ao verme que comeu o cadáver do narrador'},{q:'Que traço do Realismo ela revela?', r:'A ironia e a ruptura com a idealização romântica'},{q:'Que tipo de narrador é Brás Cubas?', r:'Narrador-personagem defunto (defunto autor)'}]},
+  {type:'atividade', title:'Atividade 2: classifique', instr:'Realista ou naturalista?', items:[{q:'Personagem age como animal movido por instintos, condicionado pelo cortiço.', r:'Naturalista'},{q:'Narrador analisa com ironia a vaidade de um personagem da elite.', r:'Realista'}]},
+  {type:'quiz', q:'O Naturalismo explica o comportamento humano pelo...', opts:['determinismo','acaso divino','amor idealizado','sonho'], c:0, why:'Meio, raça e momento.'},
+  {type:'quiz', q:'Uma marca do estilo de Machado de Assis é...', opts:['ironia e diálogo com o leitor','idealização romântica','versos parnasianos','linguagem coloquial moderna'], c:0, why:'Crítica sutil e digressões.'},
+  {type:'quiz', q:'"O Cortiço" é um romance...', opts:['naturalista','romântico','árcade','modernista'], c:0, why:'Aluísio Azevedo, 1890.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Realismo rompe com a idealização.','Machado: ironia e análise psicológica.','Naturalismo: determinismo científico.','1881 marca o início no Brasil.']},
+  {type:'auto', items:['Situo Realismo e Naturalismo.','Diferencio as estéticas.','Analiso recursos machadianos.','Reconheço o determinismo.']},
+  {type:'encerramento', casa:'Leia o capítulo "O delírio" de "Memórias Póstumas" e anote um exemplo de ironia.'}
+]};
+
+AULAS[179] = { ill:'pena', slides:[
+  {type:'capa', title:'Parnasianismo e Simbolismo', sub:'A forma perfeita e a sugestão'},
+  {type:'objetivos', items:['Situar Parnasianismo e Simbolismo no fim do século XIX','Reconhecer o culto à forma parnasiano','Identificar a musicalidade e a sugestão simbolistas','Ler poemas de Olavo Bilac e Cruz e Sousa']},
+  {type:'pergunta', q:'Um poema vale mais pela forma perfeita ou pela emoção que provoca?', hint:'Os dois movimentos responderam de jeitos diferentes.', ill:'balao'},
+  {type:'conceito', title:'Dois caminhos', text:'O **Parnasianismo** busca a **perfeição formal**: métrica rigorosa, rimas ricas, vocabulário raro, objetividade ("arte pela arte"). O **Simbolismo** busca a **sugestão**, a **musicalidade**, o **mistério** e a espiritualidade.', box:'Parnasianos: Olavo Bilac, Raimundo Correia, Alberto de Oliveira. Simbolistas: Cruz e Sousa, Alphonsus de Guimaraens.', ill:'pena'},
+  {type:'comparacao', title:'Parnasianismo x Simbolismo', left:{h:'Parnasianismo', items:['Forma perfeita','Objetividade','Temas clássicos','Soneto']}, right:{h:'Simbolismo', items:['Sugestão','Subjetividade e mistério','Sinestesia, aliteração','Cor branca, névoa']}},
+  {type:'texto', title:'Leitura: Bilac e Cruz e Sousa', text:'Bilac: "Ora (direis) ouvir estrelas! Certo / Perdeste o senso!"\n\nCruz e Sousa: "Vozes veladas, veludosas vozes, / Volúpias dos violões, vozes veladas,"', source:'Olavo Bilac, "Via Láctea", 1888; Cruz e Sousa, "Violões que choram", in "Faróis", 1900 (domínio público)', side:{h:'Compare', items:['Que forma o trecho de Bilac sugere?','Que som se repete em Cruz e Sousa?','Que sensação cada um provoca?']}},
+  {type:'exemplos', title:'Recursos simbolistas', cards:[['Aliteração','Repetição de consoantes: V'],['Sinestesia','Mistura de sentidos: "perfume azul"'],['Maiúsculas alegóricas','A Dor, o Sonho'],['Vocabulário litúrgico','incenso, altar, hóstia']]},
+  {type:'passos', title:'Analisando', steps:[['Forma','Métrica e rima'],['Sons','Aliterações'],['Imagens','Objetivas ou vagas?'],['Estética','Parnasiana ou simbolista']]},
+  {type:'mapa', title:'Mapa mental', center:'FIM DO SÉC. XIX', nodes:[['Parnasianismo','Forma'],['Arte pela arte','Objetividade'],['Bilac','Via Láctea'],['Simbolismo','Sugestão'],['Musicalidade','Aliteração'],['Cruz e Sousa','Broquéis']]},
+  {type:'atividade', title:'Atividade 1: identifique', instr:'Parnasiano ou simbolista?', items:[{q:'Soneto descreve um vaso grego com precisão e rimas raras.', r:'Parnasiano'},{q:'Poema evoca névoas, sons de sinos e "alvuras" misteriosas.', r:'Simbolista'},{q:'Poema usa "aroma violeta" e "som dourado".', r:'Simbolista (sinestesia)'}]},
+  {type:'desafio', title:'Desafio: recriação', text:'Escreva dois quartetos sobre a chuva: um parnasiano e um simbolista.', items:['Parnasiano: descrição objetiva e rimas','Simbolista: sons e sugestão','Use pelo menos uma aliteração','Leia os dois em voz alta'], ill:'musica'},
+  {type:'quiz', q:'"Arte pela arte" é lema do...', opts:['Parnasianismo','Simbolismo','Romantismo','Modernismo'], c:0, why:'Valoriza a forma em si.'},
+  {type:'quiz', q:'A sinestesia, comum no Simbolismo, é...', opts:['mistura de sensações','repetição de vogais','rima rica','verso livre'], c:0, why:'Ex.: "perfume azul".'},
+  {type:'quiz', q:'Cruz e Sousa é o principal nome do...', opts:['Simbolismo brasileiro','Parnasianismo','Arcadismo','Barroco'], c:0, why:'Autor de "Broquéis" (1893).'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Parnasianismo: perfeição formal.','Simbolismo: sugestão e musicalidade.','Bilac e Cruz e Sousa como principais nomes.','Recursos sonoros e sinestesia.']},
+  {type:'auto', items:['Diferencio as estéticas.','Analiso forma e sons.','Reconheço sinestesia.','Leio poemas de ambos.']},
+  {type:'encerramento', casa:'Leia o soneto "Via Láctea XIII" de Bilac e identifique o esquema de rimas.'}
+]};
+
+AULAS[180] = { ill:'blocos', slides:[
+  {type:'capa', title:'Sintaxe do período', sub:'Estruturas e efeitos de sentido'},
+  {type:'objetivos', items:['Analisar a estrutura de períodos compostos','Reconhecer orações substantivas, adjetivas e adverbiais','Interpretar efeitos de sentido de construções sintáticas','Produzir períodos variados e claros']},
+  {type:'pergunta', q:'Por que alguns textos parecem "travados" e outros fluem?', hint:'Pense na construção das frases.', ill:'balao'},
+  {type:'conceito', title:'Orações subordinadas', text:'As subordinadas exercem funções na oração principal: **substantivas** (funcionam como sujeito, objeto...), **adjetivas** (caracterizam um nome) e **adverbiais** (expressam circunstâncias).', box:'A sintaxe organiza a hierarquia das ideias: o que é principal e o que é acessório.', ill:'blocos'},
+  {type:'exemplos', title:'Tipos', cards:[['Substantiva','É importante que todos votem. (sujeito)'],['Substantiva objetiva','Sei que você virá. (objeto)'],['Adjetiva','O livro que li é ótimo.'],['Adverbial','Quando cheguei, todos saíram.']]},
+  {type:'comparacao', title:'Efeitos de sentido', left:{h:'Período simples', items:['Choveu. O jogo parou.','Ritmo seco, impacto']}, right:{h:'Período composto', items:['Como choveu, o jogo parou.','Explicita a relação lógica']}},
+  {type:'texto', title:'Leitura: parágrafo', text:'É preciso que a sociedade compreenda que a educação é um direito. Os estudantes que abandonam a escola raramente o fazem por escolha: quando a renda familiar diminui, muitos precisam trabalhar. Por isso, políticas que garantam a permanência são urgentes.', source:'Texto criado para esta aula', side:{h:'Analise', items:['Uma oração substantiva','Uma oração adjetiva','Uma oração adverbial temporal']}},
+  {type:'passos', title:'Análise sintática do período', steps:[['Conte verbos','Quantas orações?'],['Ache a principal','Não exerce função'],['Classifique','Substantiva, adjetiva, adverbial'],['Interprete','Que relação estabelece?']]},
+  {type:'mapa', title:'Mapa mental', center:'SUBORDINAÇÃO', nodes:[['Substantivas','Sujeito, objeto...'],['Adjetivas','Caracterizam'],['Adverbiais','Circunstâncias'],['Principal','Centro'],['Hierarquia','Ideias'],['Estilo','Ritmo e clareza']]},
+  {type:'atividade', title:'Atividade 1: classifique', instr:'Classifique a oração destacada.', items:[{q:'Espero QUE VOCÊ PASSE NA PROVA.', r:'Substantiva objetiva direta'},{q:'A cidade ONDE NASCI é pequena.', r:'Adjetiva restritiva'},{q:'EMBORA ESTIVESSE CANSADO, terminou o trabalho.', r:'Adverbial concessiva'},{q:'É NECESSÁRIO que haja mudanças. (oração "que haja mudanças")', r:'Substantiva subjetiva'}]},
+  {type:'atividade', title:'Atividade 2: reescreva', instr:'Reescreva os períodos simples como um período composto.', items:[{q:'O prefeito anunciou a obra. A obra começa em maio.', r:'O prefeito anunciou que a obra começa em maio.'},{q:'O rio transbordou. Choveu muito.', r:'O rio transbordou porque choveu muito.'}]},
+  {type:'quiz', q:'Oração substantiva subjetiva funciona como...', opts:['sujeito','objeto','adjunto','aposto'], c:0, why:'Ex.: É bom que você venha.'},
+  {type:'quiz', q:'"O aluno que estudou passou." A oração destacada é...', opts:['adjetiva','adverbial','substantiva','coordenada'], c:0, why:'Caracteriza "aluno".'},
+  {type:'quiz', q:'Períodos curtos e sucessivos tendem a criar...', opts:['ritmo seco e impacto','relações lógicas explícitas','ambiguidade obrigatória','rima'], c:0, why:'Efeito de concisão.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Subordinadas exercem funções na principal.','Substantivas, adjetivas e adverbiais.','A sintaxe organiza a hierarquia das ideias.','Construções diferentes geram efeitos diferentes.']},
+  {type:'auto', items:['Analiso períodos compostos.','Classifico subordinadas.','Interpreto efeitos de sentido.','Escrevo períodos variados.']},
+  {type:'encerramento', casa:'Analise sintaticamente 3 períodos de um editorial de jornal.'}
+]};
+
+AULAS[181] = { ill:'alerta', slides:[
+  {type:'capa', title:'Fake news e pós-verdade', sub:'Checagem de fatos e de imagens'},
+  {type:'objetivos', items:['Compreender o fenômeno da pós-verdade','Aplicar procedimentos de checagem de fatos','Verificar imagens e vídeos','Refletir sobre o viés de confirmação']},
+  {type:'pergunta', q:'Por que acreditamos mais facilmente em notícias que confirmam o que já pensamos?', hint:'Pense em emoções e crenças.', ill:'balao'},
+  {type:'conceito', title:'Pós-verdade', text:'**Pós-verdade** descreve situações em que **emoções e crenças pessoais** influenciam mais a opinião pública do que **fatos objetivos**. Esse cenário favorece a circulação de **desinformação**.', box:'Viés de confirmação: tendência de aceitar o que confirma nossas crenças e rejeitar o que as contraria.', ill:'alerta'},
+  {type:'exemplos', title:'Checagem de fatos', cards:[['Origem','Quem publicou primeiro?'],['Data','A informação é atual?'],['Fontes primárias','Documentos, dados oficiais'],['Agências de checagem','Comparar verificações']]},
+  {type:'exemplos', title:'Checagem de imagens', cards:[['Busca reversa','Encontrar a origem da imagem'],['Metadados','Data e local de captura'],['Sinais de edição','Sombras, bordas, proporções'],['Contexto','A foto é do evento citado?']]},
+  {type:'texto', title:'Leitura: caso', text:'Um vídeo de multidão foi compartilhado como se mostrasse um protesto ocorrido "ontem". Uma busca reversa revelou que as imagens eram de um show realizado três anos antes, em outro país. Mesmo após a checagem, muitos continuaram compartilhando o vídeo, afirmando que "mesmo que não seja real, representa a verdade".', source:'Caso criado para esta aula', side:{h:'Reflita', items:['Que tipo de desinformação ocorreu?','Que procedimento a desmentiu?','Por que a última frase revela pós-verdade?']}},
+  {type:'passos', title:'Protocolo de checagem', steps:[['Pare','Não compartilhe por impulso'],['Investigue a fonte','Autor e veículo'],['Verifique','Dados e imagens'],['Compare','Outras fontes e checadores']]},
+  {type:'mapa', title:'Mapa mental', center:'PÓS-VERDADE', nodes:[['Emoção > fato','Definição'],['Viés de confirmação','Crenças'],['Desinformação','Conteúdo falso'],['Checagem de fatos','Fontes'],['Checagem de imagens','Busca reversa'],['Responsabilidade','Compartilhar com ética']]},
+  {type:'atividade', title:'Atividade 1: diagnóstico', instr:'Que procedimento você usaria?', items:[{q:'Foto de enchente com legenda "hoje em São Paulo".', r:'Busca reversa da imagem para verificar data e local'},{q:'Post com estatística sem fonte.', r:'Buscar a fonte primária (órgão oficial) e checadores'},{q:'Áudio atribuído a um político.', r:'Verificar veículos confiáveis e agências de checagem'}]},
+  {type:'desafio', title:'Desafio: laboratório de checagem', text:'Em grupo, chequem um conteúdo viral da semana.', items:['Descrevam o conteúdo','Apliquem o protocolo','Atribuam um selo (verdadeiro, falso, fora de contexto)','Publiquem a checagem na escola'], ill:'lupa'},
+  {type:'quiz', q:'Pós-verdade é quando...', opts:['emoções e crenças pesam mais que fatos','os fatos sempre prevalecem','não há opinião pública','a ciência é unânime'], c:0, why:'Definição do fenômeno.'},
+  {type:'quiz', q:'A busca reversa de imagens serve para...', opts:['descobrir a origem e o contexto da imagem','editar fotos','aumentar curtidas','apagar vídeos'], c:0, why:'Revela onde a imagem apareceu antes.'},
+  {type:'quiz', q:'Viés de confirmação é...', opts:['aceitar o que confirma nossas crenças','checar todas as fontes','duvidar de tudo','mudar de opinião facilmente'], c:0, why:'Filtro cognitivo.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Pós-verdade: emoção acima dos fatos.','Viés de confirmação favorece a desinformação.','Checagem envolve fonte, data, dados e imagens.','Compartilhar exige responsabilidade.']},
+  {type:'auto', items:['Explico pós-verdade.','Aplico checagem de fatos.','Verifico imagens.','Reconheço meu viés.']},
+  {type:'encerramento', casa:'Faça a busca reversa de uma imagem viral e registre o que descobriu.'}
+]};
+
+AULAS[182] = { ill:'celular', slides:[
+  {type:'capa', title:'Bolhas e algoritmos', sub:'Curadoria das redes sociais'},
+  {type:'objetivos', items:['Compreender como algoritmos selecionam conteúdos','Analisar o efeito bolha e a polarização','Refletir sobre a própria dieta informacional','Atuar de forma ética nas redes']},
+  {type:'pergunta', q:'Por que o feed de cada pessoa é diferente?', hint:'Pense em curtidas, tempo de tela e histórico.', ill:'balao'},
+  {type:'conceito', title:'Curadoria algorítmica', text:'As plataformas usam **algoritmos** que selecionam o que vemos com base em nosso **comportamento**. Isso pode criar **bolhas de filtro**: ambientes em que só vemos conteúdos que confirmam nossas visões.', box:'Câmara de eco: as mesmas ideias se repetem e se amplificam, reduzindo o contato com o diferente.', ill:'celular'},
+  {type:'exemplos', title:'Como o algoritmo aprende', cards:[['Curtidas e reações','Indicam preferências'],['Tempo de visualização','Sinaliza interesse'],['Compartilhamentos','Ampliam o alcance'],['Busca e cliques','Formam um perfil']]},
+  {type:'comparacao', title:'Efeitos', left:{h:'Benefícios', items:['Conteúdo relevante','Descoberta de interesses','Personalização']}, right:{h:'Riscos', items:['Bolhas e polarização','Desinformação amplificada','Manipulação de opinião']}},
+  {type:'texto', title:'Leitura: depoimento', text:'"Comecei a assistir a vídeos sobre dieta. Em uma semana, meu feed estava cheio de corpos “perfeitos” e promessas milagrosas. Percebi que não era eu escolhendo o que ver: era a plataforma me empurrando para isso."', source:'Depoimento criado para esta aula', side:{h:'Analise', items:['Como o algoritmo agiu?','Que riscos o depoimento revela?','O que a pessoa poderia fazer?']}},
+  {type:'passos', title:'Saindo da bolha', steps:[['Diversifique','Siga fontes variadas'],['Questione','Por que estou vendo isso?'],['Ajuste','Configurações e preferências'],['Desconecte','Tempo longe da tela']]},
+  {type:'mapa', title:'Mapa mental', center:'ALGORITMOS', nodes:[['Curadoria','Seleção automática'],['Bolha de filtro','Visão limitada'],['Câmara de eco','Repetição'],['Polarização','Divisão'],['Dados','Comportamento'],['Autonomia','Escolhas conscientes']]},
+  {type:'atividade', title:'Atividade 1: reflexão', instr:'Responda.', items:[{q:'Que tipo de conteúdo mais aparece no seu feed?', r:'Resposta pessoal'},{q:'Como uma bolha de filtro afeta debates públicos?', r:'Reduz o contato com opiniões diferentes e intensifica a polarização'},{q:'Cite duas atitudes para diversificar sua informação.', r:'Ex.: seguir veículos de diferentes linhas; buscar ativamente outras fontes'}]},
+  {type:'desafio', title:'Desafio: auditoria do feed', text:'Durante 3 dias, registre os 10 primeiros conteúdos do seu feed.', items:['Classifique por tema','Identifique repetições','Avalie a diversidade de fontes','Escreva um parágrafo de conclusão'], ill:'grafico'},
+  {type:'quiz', q:'Bolha de filtro é...', opts:['ambiente informacional limitado criado por algoritmos','um tipo de vírus','uma rede social específica','uma configuração de privacidade'], c:0, why:'Restringe a diversidade.'},
+  {type:'quiz', q:'Algoritmos de recomendação se baseiam principalmente em...', opts:['comportamento do usuário','sorteio aleatório','opinião de jornalistas','ordem alfabética'], c:0, why:'Curtidas, tempo, cliques.'},
+  {type:'quiz', q:'Uma forma de reduzir o efeito bolha é...', opts:['diversificar as fontes','curtir apenas o que concorda','desativar o senso crítico','compartilhar sem ler'], c:0, why:'Amplia o repertório.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Algoritmos fazem curadoria do que vemos.','Bolhas limitam a diversidade.','Polarização e desinformação são riscos.','Escolhas conscientes ampliam a autonomia.']},
+  {type:'auto', items:['Explico o funcionamento dos algoritmos.','Reconheço bolhas.','Diversifico minhas fontes.','Uso as redes com ética.']},
+  {type:'encerramento', casa:'Siga duas fontes confiáveis com visões diferentes das suas e observe seu feed por uma semana.'}
+]};
+
+AULAS[183] = { ill:'balanca', slides:[
+  {type:'capa', title:'Parcialidade na notícia', sub:'Graus de imparcialidade e interesses do jornalismo'},
+  {type:'objetivos', items:['Analisar graus de parcialidade em textos noticiosos','Identificar recortes, fontes e escolhas lexicais','Compreender interesses econômicos e políticos do jornalismo','Valorizar a checagem e a pluralidade']},
+  {type:'pergunta', q:'Um jornal financiado por anunciantes pode criticá-los com liberdade?', hint:'Pense em interesses econômicos.', ill:'balao'},
+  {type:'conceito', title:'Parcialidade', text:'A imparcialidade total é um ideal. Na prática, toda notícia resulta de **recortes**: o que mostrar, quem ouvir, que palavras usar. Veículos também têm **interesses econômicos e políticos** que podem influenciar a cobertura.', box:'O bom jornalismo busca transparência, pluralidade de fontes e checagem.', ill:'balanca'},
+  {type:'exemplos', title:'Onde a parcialidade aparece', cards:[['Recorte','O que é incluído ou omitido'],['Hierarquia','O que vai para a capa'],['Fontes','Quem fala e quem é silenciado'],['Léxico','"Reforma" x "desmonte"']]},
+  {type:'texto', title:'Leitura: comparando relatos', text:'Relato 1: "Novo shopping gera 2 mil empregos e movimenta a economia da região."\nRelato 2: "Construção de shopping derruba área verde e expulsa comerciantes locais."', source:'Relatos criados para esta aula', side:{h:'Analise', items:['Que recorte cada relato faz?','Que fontes cada um provavelmente ouviu?','Os dois podem ser verdadeiros?']}},
+  {type:'comparacao', title:'Indicadores', left:{h:'Maior imparcialidade', items:['Vários lados ouvidos','Dados verificáveis','Distinção entre fato e opinião']}, right:{h:'Maior parcialidade', items:['Uma só voz','Adjetivação intensa','Opinião disfarçada de fato']}},
+  {type:'passos', title:'Análise crítica', steps:[['Identifique o veículo','Linha editorial'],['Mapeie fontes','Quem fala?'],['Observe escolhas','Léxico e destaque'],['Compare','Outros veículos']]},
+  {type:'mapa', title:'Mapa mental', center:'PARCIALIDADE', nodes:[['Recorte','Seleção'],['Fontes','Vozes'],['Léxico','Avaliação'],['Interesses','Econômicos e políticos'],['Linha editorial','Posição do veículo'],['Pluralidade','Antídoto']]},
+  {type:'atividade', title:'Atividade 1: análise', instr:'Responda sobre os relatos.', items:[{q:'Que aspecto o relato 1 destaca?', r:'Os benefícios econômicos (empregos)'},{q:'Que aspecto o relato 2 destaca?', r:'Os impactos ambientais e sociais'},{q:'Como um leitor crítico deveria agir?', r:'Ler ambos e buscar dados e outras fontes para formar opinião'}]},
+  {type:'desafio', title:'Desafio: análise comparativa', text:'Comparem a cobertura de um mesmo fato em três veículos de linhas editoriais diferentes.', items:['Identifiquem os veículos','Comparem recortes e fontes','Analisem escolhas lexicais','Concluam sobre graus de parcialidade'], ill:'jornal'},
+  {type:'quiz', q:'Recorte, na notícia, significa...', opts:['a seleção do que é mostrado ou omitido','o tamanho da foto','o preço do jornal','a data de publicação'], c:0, why:'Toda notícia escolhe aspectos.'},
+  {type:'quiz', q:'Uma marca de maior parcialidade é...', opts:['ouvir apenas um lado','apresentar dados verificáveis','distinguir fato e opinião','citar várias fontes'], c:0, why:'Reduz a pluralidade.'},
+  {type:'quiz', q:'Interesses econômicos podem influenciar a cobertura porque...', opts:['veículos dependem de anunciantes e investidores','jornalistas não têm opinião','o leitor decide tudo','não existem empresas de mídia'], c:0, why:'Há relações financeiras.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Imparcialidade total é um ideal.','Recortes, fontes e léxico revelam posições.','Interesses influenciam a cobertura.','Comparar veículos é essencial.']},
+  {type:'auto', items:['Analiso graus de parcialidade.','Identifico recortes e fontes.','Reconheço interesses.','Comparo coberturas.']},
+  {type:'encerramento', casa:'Leia o editorial de um jornal e identifique sua posição sobre um tema.'}
+]};
+
+AULAS[184] = { ill:'megafone', slides:[
+  {type:'capa', title:'Publicidade digital e estereótipos', sub:'Persuasão nas redes'},
+  {type:'objetivos', items:['Analisar formas contemporâneas de publicidade digital','Identificar estratégias de persuasão','Reconhecer estereótipos em anúncios','Refletir sobre consumo e representatividade']},
+  {type:'pergunta', q:'Você já comprou algo indicado por um influenciador? Sabia que era publicidade?', hint:'Pense em publiposts e "recebidos".', ill:'balao'},
+  {type:'conceito', title:'Publicidade digital', text:'Nas redes, a publicidade aparece em **posts patrocinados**, **parcerias com influenciadores**, **anúncios segmentados** e **conteúdo de marca**. Muitas vezes, mistura-se ao entretenimento, o que dificulta reconhecê-la.', box:'Peças publicitárias também podem reforçar ou combater estereótipos de gênero, raça, corpo e classe.', ill:'megafone'},
+  {type:'exemplos', title:'Formatos', cards:[['Publipost','Influenciador divulga produto'],['Anúncio segmentado','Exibido conforme seu perfil'],['Unboxing','Abertura de produtos "recebidos"'],['Branded content','Conteúdo produzido pela marca']]},
+  {type:'exemplos', title:'Estereótipos frequentes', cards:[['Gênero','Mulheres só em tarefas domésticas'],['Corpo','Padrão único de beleza'],['Raça','Pessoas negras em papéis secundários'],['Idade','Idosos como frágeis ou cômicos']]},
+  {type:'texto', title:'Leitura: análise de campanha', text:'Uma marca de produtos de limpeza lançou um vídeo em que apenas mulheres limpam a casa enquanto homens assistem TV. Após críticas nas redes, a empresa retirou o anúncio e lançou outra campanha mostrando famílias diversas dividindo as tarefas.', source:'Caso criado para esta aula', side:{h:'Analise', items:['Que estereótipo havia no 1º anúncio?','Por que gerou críticas?','O que mudou na nova campanha?']}},
+  {type:'passos', title:'Leitura crítica de anúncios', steps:[['É publicidade?','Há indicação clara?'],['Público-alvo','Quem a peça quer atingir?'],['Estratégias','Emoção, autoridade, urgência'],['Representações','Há estereótipos?']]},
+  {type:'mapa', title:'Mapa mental', center:'PUBLICIDADE DIGITAL', nodes:[['Influenciadores','Parcerias'],['Segmentação','Dados pessoais'],['Persuasão','Estratégias'],['Estereótipos','Representação'],['Transparência','#publi'],['Consumo','Consciente']]},
+  {type:'atividade', title:'Atividade 1: análise', instr:'Responda.', items:[{q:'Por que anúncios segmentados são eficazes?', r:'Porque usam dados do usuário para mostrar produtos alinhados a seus interesses'},{q:'Por que influenciadores devem sinalizar publicidade?', r:'Para garantir transparência e não enganar o público'},{q:'Que estereótipo de corpo é comum em anúncios?', r:'Um padrão único de beleza (magreza, pele clara etc.)'}]},
+  {type:'desafio', title:'Desafio: campanha inclusiva', text:'Criem uma peça publicitária digital que evite estereótipos.', items:['Produto fictício','Público-alvo definido','Representação diversa','Sinalização clara de publicidade'], ill:'celular'},
+  {type:'quiz', q:'Publipost é...', opts:['post patrocinado por uma marca','notícia jornalística','post sem interesse comercial','um tipo de vírus'], c:0, why:'Conteúdo pago.'},
+  {type:'quiz', q:'Um anúncio que mostra só mulheres cuidando da casa reforça...', opts:['estereótipo de gênero','diversidade','consumo consciente','neutralidade'], c:0, why:'Associa tarefas a um gênero.'},
+  {type:'quiz', q:'A segmentação de anúncios usa...', opts:['dados do comportamento do usuário','sorteios','apenas a idade','nenhuma informação'], c:0, why:'Perfil digital.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Publicidade digital se mistura ao entretenimento.','Segmentação usa nossos dados.','Anúncios podem reforçar ou combater estereótipos.','Leitura crítica e transparência são essenciais.']},
+  {type:'auto', items:['Reconheço publicidade digital.','Analiso estratégias.','Identifico estereótipos.','Consumo com consciência.']},
+  {type:'encerramento', casa:'Encontre um publipost e analise se a publicidade estava claramente indicada.'}
+]};
+
+AULAS[185] = { ill:'pena', slides:[
+  {type:'capa', title:'Resumo e resenha', sub:'Sintetizar e avaliar com responsabilidade'},
+  {type:'objetivos', items:['Diferenciar resumo e resenha','Produzir resumo fiel ao texto-fonte','Produzir resenha com avaliação fundamentada','Gerenciar vozes com citação e paráfrase']},
+  {type:'pergunta', q:'Qual é a diferença entre dizer do que um livro trata e dizer se ele é bom?', hint:'Uma é síntese, a outra é avaliação.', ill:'balao'},
+  {type:'conceito', title:'Dois gêneros acadêmicos', text:'O **resumo** sintetiza as ideias principais, **sem opinião**. A **resenha** apresenta a obra **e a avalia** criticamente, com argumentos. Ambos exigem manejo adequado das vozes do autor original.', box:'No resumo: "o autor afirma". Na resenha: "o autor afirma, mas falha ao..."', ill:'pena'},
+  {type:'comparacao', title:'Resumo x resenha', left:{h:'Resumo', items:['Síntese fiel','Sem opinião','3ª pessoa, verbos de dizer']}, right:{h:'Resenha', items:['Síntese + avaliação','Com opinião fundamentada','Argumentos e critérios']}},
+  {type:'exemplos', title:'Estrutura da resenha', cards:[['Referência','Autor, título, editora, ano'],['Apresentação','Tema e objetivo da obra'],['Síntese','Principais ideias'],['Avaliação','Pontos fortes e fracos, recomendação']]},
+  {type:'texto', title:'Leitura: trecho de resenha', text:'Em "O Cortiço" (1890), Aluísio Azevedo retrata a vida em uma habitação coletiva no Rio de Janeiro, mostrando como o meio molda o comportamento dos personagens. O autor constrói cenas vívidas e um painel social contundente. Contudo, o determinismo científico da época leva a representações estereotipadas, sobretudo de personagens negros e mestiços, aspecto que merece leitura crítica hoje.', source:'Resenha criada para esta aula', side:{h:'Analise', items:['Que trecho é síntese?','Que trecho é avaliação positiva?','Que crítica é feita?']}},
+  {type:'passos', title:'Produzindo', steps:[['Leia e anote','Ideias principais'],['Sintetize','Com suas palavras'],['Avalie (resenha)','Critérios claros'],['Revise','Fidelidade e argumentação']]},
+  {type:'mapa', title:'Mapa mental', center:'RESUMO E RESENHA', nodes:[['Resumo','Síntese'],['Resenha','Síntese + crítica'],['Fidelidade','Ao original'],['Verbos de dizer','Afirma, defende'],['Critérios','Avaliação'],['Referência','Dados da obra']]},
+  {type:'atividade', title:'Atividade 1: resumo ou resenha?', instr:'Classifique o trecho.', items:[{q:'"O autor defende que a educação é um direito universal e apresenta dados históricos."', r:'Resumo'},{q:'"O autor defende bem sua tese, mas os dados estão desatualizados."', r:'Resenha'},{q:'"O filme narra a trajetória de uma atleta paralímpica."', r:'Resumo'}]},
+  {type:'desafio', title:'Desafio: resenha acadêmica', text:'Escreva uma resenha (15 a 20 linhas) de um livro, filme ou artigo.', items:['Referência completa','Síntese das ideias','Avaliação com dois critérios','Recomendação final'], ill:'livro'},
+  {type:'quiz', q:'O resumo deve...', opts:['ser fiel e sem opinião','conter avaliação pessoal','acrescentar ideias novas','copiar trechos inteiros sem aspas'], c:0, why:'Síntese objetiva.'},
+  {type:'quiz', q:'A resenha se diferencia do resumo por...', opts:['incluir avaliação crítica','ser sempre mais curta','não citar a obra','não ter síntese'], c:0, why:'Avalia a obra.'},
+  {type:'quiz', q:'Verbos como "afirma", "defende", "argumenta" servem para...', opts:['atribuir ideias ao autor original','expressar a opinião do resenhista','encerrar o texto','indicar tempo'], c:0, why:'Marcam a voz do autor.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Resumo sintetiza sem opinar.','Resenha sintetiza e avalia.','Ambos exigem fidelidade.','Verbos de dizer marcam as vozes.']},
+  {type:'auto', items:['Diferencio resumo e resenha.','Produzo resumo fiel.','Avalio com critérios.','Gerencio vozes.']},
+  {type:'encerramento', casa:'Resuma em 6 linhas e depois resenhe em 10 linhas um episódio de série ou podcast.'}
+]};
+
+AULAS[186] = { ill:'microfone', slides:[
+  {type:'capa', title:'Debate e escuta respeitosa', sub:'Oralidade, postura e negociação'},
+  {type:'objetivos', items:['Participar de debates com escuta atenta','Respeitar turnos e argumentar com consistência','Analisar fala, postura e gestualidade','Negociar posições em busca de consensos']},
+  {type:'pergunta', q:'O que é mais difícil num debate: falar ou ouvir?', hint:'Pense nas discussões em grupo de que você participou.', ill:'balao'},
+  {type:'conceito', title:'Debater é construir', text:'O debate não é uma briga para "vencer": é um espaço para **confrontar ideias**, **ouvir** diferentes perspectivas e, quando possível, **construir consensos**. A **oralidade** envolve voz, postura e gestos.', box:'Escuta ativa: ouvir para compreender, não apenas para responder.', ill:'microfone'},
+  {type:'exemplos', title:'Elementos da fala', cards:[['Voz','Volume, ritmo, entonação'],['Postura','Corpo aberto, contato visual'],['Gestos','Reforçam ideias sem distrair'],['Pausas','Dão peso ao argumento']]},
+  {type:'exemplos', title:'Escuta ativa', cards:[['Parafrasear','"Se entendi bem, você diz que..."'],['Perguntar','"Pode explicar melhor?"'],['Reconhecer','"Esse ponto é relevante"'],['Responder','"No entanto, considero..."']]},
+  {type:'texto', title:'Leitura: trecho de debate', text:'ANA: A escola deveria ter aulas só pela manhã.\nLÉO: Se entendi bem, você acha que a tarde livre ajudaria nos estudos?\nANA: Isso, e também no trabalho de muitos alunos.\nLÉO: Entendo. Porém, quem estuda de manhã e trabalha à tarde pode ter pouco tempo para revisar. Talvez um horário flexível atenda aos dois lados.', source:'Diálogo criado para esta aula', side:{h:'Analise', items:['Que estratégia de escuta Léo usa?','Como ele discorda?','Que proposta de consenso aparece?']}},
+  {type:'passos', title:'Participando', steps:[['Prepare-se','Argumentos e dados'],['Escute','Anote pontos do outro'],['Responda','Retome e argumente'],['Negocie','Busque pontos comuns']]},
+  {type:'mapa', title:'Mapa mental', center:'DEBATE', nodes:[['Escuta ativa','Compreender'],['Turnos','Respeito'],['Argumentos','Consistência'],['Postura','Corpo e voz'],['Paráfrase','Mostrar escuta'],['Consenso','Negociação']]},
+  {type:'atividade', title:'Atividade 1: reformule', instr:'Reescreva as falas com respeito e escuta.', items:[{q:'"Isso que você falou é ridículo."', r:'Ex.: "Entendo seu ponto, mas discordo porque..."'},{q:'"Você não sabe nada sobre isso."', r:'Ex.: "Talvez possamos olhar outros dados sobre isso."'}]},
+  {type:'desafio', title:'Desafio: debate com consenso', text:'Realizem um debate cujo objetivo final seja uma proposta comum.', items:['Tema de interesse da escola','Mediador e relator','Uso de escuta ativa','Proposta final registrada'], ill:'megafone'},
+  {type:'quiz', q:'Escuta ativa significa...', opts:['ouvir para compreender','esperar a vez sem prestar atenção','interromper para corrigir','ignorar argumentos'], c:0, why:'Compreender antes de responder.'},
+  {type:'quiz', q:'"Se entendi bem, você defende que..." é uma estratégia de...', opts:['paráfrase','ataque pessoal','ironia','encerramento'], c:0, why:'Mostra que o outro foi ouvido.'},
+  {type:'quiz', q:'Em um debate respeitoso, discordar é...', opts:['legítimo, com argumentos','proibido','sinal de falta de educação','sempre ofensivo'], c:0, why:'O confronto de ideias é o objetivo.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Debate é confronto de ideias, não briga.','Escuta ativa e turnos de fala.','Voz, postura e gestos importam.','Negociar pode levar a consensos.']},
+  {type:'auto', items:['Escuto ativamente.','Respeito turnos.','Argumento com consistência.','Negocio posições.']},
+  {type:'encerramento', casa:'Assista a um debate televisivo e anote exemplos de escuta (ou falta dela).'}
+]};
+
+AULAS[187] = { ill:'microfone', slides:[
+  {type:'capa', title:'Roteiro para vídeo e podcast', sub:'Planejar produções multissemióticas'},
+  {type:'objetivos', items:['Reconhecer a estrutura de roteiros de vídeo e podcast','Planejar conteúdo, linguagem e recursos','Usar ferramentas digitais de produção','Produzir um roteiro completo']},
+  {type:'pergunta', q:'O que faz você assistir a um vídeo até o fim ou pular nos primeiros segundos?', hint:'Pense no começo, no ritmo e na edição.', ill:'balao'},
+  {type:'conceito', title:'Planejar antes de gravar', text:'O **roteiro** organiza o que será dito e mostrado. No **vídeo**, combina imagem, texto falado, trilha e cortes. No **podcast**, a força está na **voz**, nos **efeitos sonoros** e na **conversa**.', box:'Gancho: os primeiros segundos definem se o público continua.', ill:'microfone'},
+  {type:'exemplos', title:'Estrutura básica', cards:[['Gancho','Pergunta ou fato curioso'],['Apresentação','Tema e participantes'],['Desenvolvimento','Blocos de conteúdo'],['Encerramento','Síntese e chamada']]},
+  {type:'texto', title:'Leitura: roteiro de podcast (trecho)', text:'[VINHETA - 5s]\nLOCUTORA 1: Você sabia que o Brasil tem mais de 270 línguas indígenas faladas?\nLOCUTOR 2: Pois é! Hoje, no "Fala Brasil", vamos conversar sobre diversidade linguística.\n[TRILHA BAIXA]\nLOCUTORA 1: Para começar, vamos ouvir a professora Ana, linguista...\n[INSERT: ENTREVISTA - 1min]', source:'Roteiro criado para esta aula (dado: Censo IBGE 2010 registrou 274 línguas indígenas)', side:{h:'Analise', items:['Qual é o gancho?','Que recursos sonoros aparecem?','Como o roteiro marca as falas?']}},
+  {type:'comparacao', title:'Vídeo x podcast', left:{h:'Vídeo', items:['Imagem e texto na tela','Cortes e enquadramentos','Legenda e acessibilidade']}, right:{h:'Podcast', items:['Voz e conversa','Trilha e efeitos sonoros','Ouvido em movimento']}},
+  {type:'passos', title:'Produção', steps:[['Pauta','Tema e pesquisa'],['Roteiro','Falas e indicações técnicas'],['Gravação','Celular, microfone, silêncio'],['Edição','Cortes, trilha, legendas']]},
+  {type:'mapa', title:'Mapa mental', center:'ROTEIRO', nodes:[['Gancho','Início'],['Blocos','Conteúdo'],['Indicações técnicas','[TRILHA], [CORTE]'],['Voz','Ritmo e clareza'],['Ferramentas','Apps de edição'],['Acessibilidade','Legendas e transcrição']]},
+  {type:'atividade', title:'Atividade 1: crie ganchos', instr:'Escreva um gancho para cada tema.', items:[{q:'Reciclagem', r:'Ex.: "Sabia que uma lata de alumínio pode voltar à prateleira em 60 dias?"'},{q:'Sono na adolescência', r:'Ex.: "Por que você sente sono na primeira aula? A ciência explica."'}]},
+  {type:'desafio', title:'Desafio: episódio piloto', text:'Em grupo, roteirizem e gravem um podcast ou vídeo de 3 minutos.', items:['Gancho forte','Dois blocos de conteúdo','Uma entrevista ou dado com fonte','Edição com trilha e legenda/transcrição'], ill:'celular'},
+  {type:'quiz', q:'O gancho serve para...', opts:['prender a atenção logo no início','encerrar o episódio','listar créditos','apresentar a bibliografia'], c:0, why:'Os primeiros segundos são decisivos.'},
+  {type:'quiz', q:'No podcast, o recurso principal é...', opts:['a voz','a imagem','o texto escrito na tela','o cenário'], c:0, why:'É uma mídia sonora.'},
+  {type:'quiz', q:'Legendas e transcrições contribuem para...', opts:['acessibilidade','aumentar a duração','reduzir a qualidade','esconder informações'], c:0, why:'Incluem pessoas surdas e facilitam o acesso.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Roteiro organiza falas e recursos.','Gancho prende a atenção.','Vídeo e podcast têm linguagens próprias.','Edição e acessibilidade completam a produção.']},
+  {type:'auto', items:['Estruturo um roteiro.','Crio ganchos.','Uso recursos multissemióticos.','Produzo e edito.']},
+  {type:'encerramento', casa:'Ouça um episódio de podcast e mapeie sua estrutura (gancho, blocos, encerramento).'}
+]};
+
+AULAS[188] = { ill:'grafico', slides:[
+  {type:'capa', title:'Pesquisa e divulgação científica', sub:'Investigar e comunicar conhecimento'},
+  {type:'objetivos', items:['Planejar pesquisas com diferentes métodos','Usar fontes confiáveis e instrumentos de coleta','Produzir textos de divulgação científica','Comunicar resultados para públicos diversos']},
+  {type:'pergunta', q:'Como transformar uma pesquisa escolar em algo que o público queira ler ou assistir?', hint:'Pense em linguagem, formato e imagens.', ill:'balao'},
+  {type:'conceito', title:'Da pesquisa à divulgação', text:'A pesquisa pode ser **bibliográfica**, **de campo** (questionários, entrevistas) ou **experimental**. A **divulgação científica** traduz resultados para o público em geral, com **clareza**, **precisão** e **recursos visuais**.', box:'Divulgar não é simplificar demais: é tornar acessível sem distorcer.', ill:'grafico'},
+  {type:'exemplos', title:'Instrumentos de coleta', cards:[['Questionário','Perguntas fechadas e abertas'],['Entrevista','Roteiro semiestruturado'],['Observação','Registro sistemático'],['Revisão bibliográfica','Artigos e livros']]},
+  {type:'exemplos', title:'Formatos de divulgação', cards:[['Artigo de divulgação','Revistas e sites'],['Infográfico','Dados visuais'],['Vídeo curto','Redes sociais'],['Pôster/banner','Feiras científicas']]},
+  {type:'texto', title:'Leitura: abstract de divulgação', text:'Quanto tempo os estudantes da nossa escola dormem? Aplicamos um questionário a 200 alunos do Ensino Médio. Os resultados mostram que 68% dormem menos de 7 horas por noite em dias de aula. Segundo a Academia Americana de Medicina do Sono, adolescentes precisam de 8 a 10 horas. Propomos uma campanha sobre higiene do sono.', source:'Texto criado para esta aula', side:{h:'Analise', items:['Qual foi o método?','Qual é o principal resultado?','Que fonte dá suporte à análise?']}},
+  {type:'passos', title:'Etapas', steps:[['Pergunta','Problema de pesquisa'],['Método','Como coletar dados'],['Análise','Tabelas e gráficos'],['Divulgação','Formato e público']]},
+  {type:'mapa', title:'Mapa mental', center:'PESQUISA', nodes:[['Pergunta','Problema'],['Método','Campo, bibliográfico'],['Coleta','Questionários'],['Análise','Gráficos'],['Fontes','Confiáveis'],['Divulgação','Público amplo']]},
+  {type:'atividade', title:'Atividade 1: planeje', instr:'Complete o planejamento de pesquisa.', items:[{q:'Pergunta', r:'Ex.: Quanto tempo os alunos passam nas redes sociais por dia?'},{q:'Método e instrumento', r:'Ex.: Pesquisa de campo com questionário online'},{q:'Formato de divulgação', r:'Ex.: Infográfico para o mural e as redes da escola'}]},
+  {type:'desafio', title:'Desafio: feira de divulgação', text:'Realizem uma minipesquisa e divulguem os resultados.', items:['Pergunta clara','Questionário com 5 perguntas','Gráfico com os dados','Infográfico ou vídeo de 1 minuto'], ill:'grafico'},
+  {type:'quiz', q:'Pesquisa de campo envolve...', opts:['coleta direta de dados com pessoas ou no ambiente','apenas leitura de livros','inventar resultados','copiar pesquisas alheias'], c:0, why:'Questionários, entrevistas, observação.'},
+  {type:'quiz', q:'Divulgação científica busca...', opts:['tornar o conhecimento acessível sem distorcer','esconder dados','usar só jargão técnico','vender produtos'], c:0, why:'Comunicação com o público.'},
+  {type:'quiz', q:'No abstract lido, 68% representa...', opts:['alunos que dormem menos de 7 horas','alunos que dormem 10 horas','o total de entrevistados','a recomendação médica'], c:0, why:'Principal resultado.'},
+  {type:'gabarito'},
+  {type:'resumo', items:['Pesquisas têm métodos diversos.','Instrumentos de coleta geram dados.','Divulgação traduz sem distorcer.','Formatos variam conforme o público.']},
+  {type:'auto', items:['Planejo pesquisas.','Uso instrumentos de coleta.','Analiso dados.','Divulgo resultados.']},
+  {type:'encerramento', casa:'Elabore um questionário de 5 perguntas sobre um tema de interesse da turma.'}
+]};
